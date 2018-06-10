@@ -1,2 +1,157 @@
-<h1><%= @title %></h1>
-<p><%= @message %></p>
+<nav class="navbar sticky-promo navbar-static-top text-center">
+    <div class="container">
+    <p>
+        Save $35 with a purchase of 2 or 3 Goodyear and Michelin tires. <a href="#">Click here for more details</a>
+    </p>
+    </div>
+</nav>
+<nav class="navbar navbar-default header">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <img src="<%= image_url('logo.png') %>" alt=""  />
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Tire Catalog</a></li>
+        <li><a href="#">Promotions</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#" class="cta-primary">Contact Us</a></li>
+        <li>
+            <a href=""><i class="fas fa-shopping-cart"></i>Cart
+            <span class="cart">2</span>
+            </a>
+        </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<section class="jumbotron hero about-hero about-us text-center padding-top-lg" style="background-image: url(<%= image_url('lugnut_story_v2.jpg') %>) !important;">
+    <div class="container">
+    <h2>About Us</h2>
+    <span class="divider"></span>
+    </div>
+</section>
+
+<section class="breadcrumb-subnav">
+    <nav role="navigation" class="navbar navbar-default">
+    <div class="container">
+        <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li class="active">About Us</li>
+        </ol>
+    </div>
+    </nav>
+</section>
+
+<section class="about-us">
+    <div class="container">
+    <h3 class="text-center margin-bottom-xs">Some Main Heading</h3>
+    <div class="row">
+        <div class="col-md-8 lead">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+        </div>
+        <div class="col-md-4">
+            <p><img src="<%= image_url('tirelabor.jpg') %>" alt="" class="img-responsive img-thumbnail"></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ci-37kxmYMA"></iframe>
+            </div>
+        </div>
+        <div class="col-md-8 lead">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+<section class="promotions text-center margin-top-sm padding-top-sm padding-bottom-xs">
+    <div class="container">
+    <form class="form-inline">
+        <div class="form-group">
+        <label>Promotions</label>
+        </div>
+        <div class="form-group">
+        <input type="text" placeholder="FIRST NAME"  />
+        </div>
+        <div class="form-group">
+        &nbsp;
+        <input type="text" placeholder="LAST NAME" />
+        </div>
+        <button class="btn cta-secondary">Sign Up</button>
+    </form>
+    </div>
+    <div class="container">
+    <p class="margin-top-xs">
+        <small>* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin </small>
+    </p>
+    </div>
+</section>
+
+<footer class="padding-top-sm padding-bottom-sm">
+    <div class="container">
+    <div class="col-md-4 col-sm-4">
+        <img src="images/logo-footer.png" alt="" class="footerlogo"  />
+        <p class="margin-top-sm">
+        <strong class="tag-line">Connect with Us</strong>
+        </p>
+        <ul class="list-inline media-icons">
+        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+        <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+        <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+        </ul>
+        <p class="disclaimer">
+        2018 Lugnut&rsquo;s Tire Services. All Rights Reserved.
+        </p>
+    </div>
+    <div class="col-md-8 col-sm-8 cta-icons">
+        <div class="col-md-3 col-sm-3 col-xs-3 text-center">
+        <h3 class="margin-top-none">Get In <span class="no-wrap">Touch</span></h3>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+        <p class="text-center">
+            <span><i class="fas fa-phone"></i></span><br  /><br />
+            1-555-555-5555
+        </p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-3 text-center">
+        <span><i class="fas fa-envelope"></i></span><br /><br />
+        Send us an email
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3 text-center">
+        <span><i class="fas fa-comments"></i></span><br /><br />
+        Chat with a Rep
+        </div>
+        <div class="divider padding-top-xs"></div>
+        <div class="col-md-12 margin-left-sm padding-top-xs">
+        <ul class="list-inline sitemap-nav">
+            <li><a href="#">Tire Catalog</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Account</a></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+</footer>
