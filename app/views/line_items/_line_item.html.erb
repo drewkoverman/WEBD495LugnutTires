@@ -1,0 +1,18 @@
+<hr />
+<div class="col-md-2">
+  <p><img src="<%= image_url('tire.jpg') %>"  alt="" class="img-responsive" /></p>
+</div>
+<div class="col-md-7 margin-top-sm">
+  <h4 class="title"><%= line_item.product.name %></h4>
+  <p class="desc">
+    <%= truncate(line_item.product.desc, length: 120) %>
+  </p>
+</div>
+<div class="col-md-3 margin-top-lg padding-right-none text-right">
+  <p>
+    <%= link_to 'Remove', line_item, method: :delete, data: { confirm: "Are you sure? " }, class: "padding-right-xs" %>
+    <span class="padding-right-xs">Qt: <%= line_item.quantity %></span>
+    <span class="itemTotal"><%= number_to_currency(line_item.total_price) %></span>
+  </p>
+</div>
+<hr style="clear:both;" />
