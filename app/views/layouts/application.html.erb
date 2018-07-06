@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lugnuts Tires</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,900" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+  <%= render "shared/promo" %>
+  <%= render "shared/header" %>
+
+  <%= yield %>
+
+  <%= render "shared/promotions" %>
+  <%= render "shared/footer" %>
+  <%= javascript_include_tag 'application' %>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        models: [],
+        makes: [],
+        cta: false,
+        selectedYear: '',
+        selectedModel: '',
+        selectedMake: '',
+        options: {
+          "2011": {
+            "Audi": {
+              "A8 4.2 Quattro": "A8 4.2 Quattro"
+            }
+          },
+          "2012": {
+            "Buick": {
+              "Enclave Standard": "Enclave Standard"
+            }
+          },
+          "2013": {
+            "Dodge": {
+              "Challenger R/T": "Challenger R/T"
+            }
+          },
+          "2014": {
+            "Audi": {
+              "LA8 4.2 Quattro":"LA8 4.2 Quattro"
+            },
+            "Jeep": {
+              "Grand Cherokee Laredo 4WD": "Grand Cherokee Laredo 4WD",
+              "F-150 XLT H-Duty 4WD": "F-150 XLT H-Duty 4WD"
+            }
+          },
+          "2015": {
+            "Ford": {
+              "F-150 XLT H-Duty 4WD": "F-150 XLT H-Duty 4WD"
+            },
+            "Infiniti": {
+              "Q70L": "Q70L"
+            }
+          },
+          "2016": {
+            "Jeep": {
+              "Cherokee 4WD": "Cherokee 4WD"
+            }
+          },
+          "2017": {
+            "Jeep": {
+              "Grand Cherokee Laredo 2WD": "Grand Cherokee Laredo 2WD"
+            }
+          },
+          "2019": {
+            "Toyota": {
+              "Avalon Limited": "Avalon Limited"
+            }
+          }
+        }
+      },
+      watch: {
+        selectedYear: function() {
+          this.models = [];
+          if (this.selectedYear == "2011" || this.selectedYear == "2012" || this.selectedYear == "2014" || this.selectedYear == "2015" || this.selectedYear == "2016" || this.selectedYear == "2017" || this.selectedYear == "2019") {
+            this.models = this.options[this.selectedYear];
+          } else {
+            this.selectedYear = "";
+          }
+        },
+        selectedModel: function() {
+            this.makes = [];
+            if(this.selectedModel == "Ford" || this.selectedModel == "Jeep" || this.selectedModel == "Dodge" || this.selectedModel == "Buick" || this.selectedModel == "Infiniti" || this.selectedModel == "Audi" || this.selectedModel == "Toyota") {
+              this.makes = this.models[this.selectedModel];
+              this.cta = true
+            } else {
+              this.selectedMake = "";
+              this.cta = false;
+            }
+        }
+      }
+    })
+  </script>
+  </body>
+</html>

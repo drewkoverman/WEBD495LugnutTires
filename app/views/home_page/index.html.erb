@@ -1,0 +1,134 @@
+<!--<%= form_tag(products_path, method: :get) do %>
+  Year: <%= text_field_tag :year, params[:year] %>
+  Model: <%= text_field_tag :model, params[:model] %>
+  Make: <%= text_field_tag :make, params[:make] %>
+  <%= submit_tag 'Search', name: nil %>
+<% end %>-->
+
+<section class="jumbotron hero text-center" style="background-image: url(<%= image_url('hero.jpg') %>)" id="app">
+      <div class="container">
+        <h2>Find Your Tires By Vehicle</h2>
+
+        <form class="form-inline" action="/products" accept-charset="UTF-8" method="get">
+          <div class="form-group">
+            <select class="form-control" v-model="selectedYear" name="year" id="year">
+              <option class="typography" value="">Select a Year</option>
+              <option v-for="(option_obj, option) in options" :value="option">
+                {{ option }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control" :disabled="models.length == 0" v-model="selectedModel" name="model" id="model">
+              <option class="typography" value="">Select a Model</option>
+              <option v-for="(model_obj, model) in models" :value="model">
+                {{ model }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group" >
+            <select class="form-control" :disabled="makes.length == 0" v-model="selectedMake" name="make" id="make">
+              <option class="typography" value="">Select a Make</option>
+              <option v-for="(make_obj, make) in makes" :value="make">
+                {{ make }}
+              </option>
+            </select>
+          </div>
+          <button type="submit" class="btn cta-primary" :disabled="cta == false">Find</button>
+        </form>
+        <div class="col-md-6 col-md-offset-3">
+          <p>
+            Click on our Tire Catalog to view our entire catalog. Lugnut's Tires offers to most reliable brands including: Goodyear, Bridgestone, and Michelin. Tires low as $150.00
+          </p>
+          <p>
+            <%= link_to "View Tire Catalog", products_path, class: "btn cta-secondary" %>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chat padding-bottom-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <h3>Chat with us or <span class="no-wrap">by appointment</span></h3>
+            <button class="btn cta-chat margin-top-xs">Contact Us</button>
+          </div>
+          <div class="col-md-9 margin-top-xs info-titles">
+              <p>
+                Contact us to access information regarding what services we offer and make an appointment at your local Lugnut’s Tire shop. Reserving an service appointment to upgrade your tire just involves three simple steps. Includes:
+              </p>
+              <div class="col-md-3 padding-left-none">
+                <h3><span>01</span> Select Your Tire</h3>
+              </div>
+              <div class="col-md-5 padding-left-none">
+                <h3><span>02</span> Schedule Your Service Day</h3>
+              </div>
+              <div class="col-md-4 padding-left-none">
+                <h3><span>03</span> Drop Off Your Vehicle</h3>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-product text-center padding-top-xs bg-light-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h5 class="padding-bottom-md">Feature Products &amp; Services</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 margin-right-xs grid-card padding-top-sm padding-bottom-sm">
+            <span class="fas fa-car"></span>
+            <h4>Passenger Tires <span class="no-wrap"><small>Tires</small></span></h4>
+            <p class="padding-bottom-xs">
+              Lugnut Tire’s offers various of options of tires that guarantee the right choice for you, and as well your budget.
+            </p>
+            <p>
+              <a href="/services/index#passengertires" class="btn cta-opt">Explore</a>
+            </p>
+          </div>
+          <div class="col-md-3 margin-right-xs grid-card padding-top-sm padding-bottom-sm">
+            <span class="fas fa-car"></span>
+            <h4>Alignment &amp; Brakes <span class="no-wrap"><small>Services</small></span></h4>
+            <p class="padding-bottom-xs">
+              Come and have us provide the finest alignments and brake replacements in the business.
+            </p>
+            <p>
+              <a href="/services/index#brakes" class="btn cta-opt">Explore</a>
+            </p>
+          </div>
+          <div class="col-md-3 margin-right-xs grid-card padding-top-sm padding-bottom-sm">
+            <span class="fas fa-car"></span>
+            <h4>Oil Change <span class="no-wrap"><small>Services</small></span></h4>
+            <p class="padding-bottom-xs">
+              Come and have our trained specialists change your oil, we use only the top oil brands.
+            </p>
+            <p>
+              <a href="/services/index#oilchange" class="btn cta-opt">Explore</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 margin-top-md padding-bottom-sm">
+            <a href="/services/index"><i class="fas fa-car"></i> All Products &amp; Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="jumbotron lugnut-story" style="background-image: url(<%= image_url('lugnut_story.jpg') %>) !important;"></section>
+
+    <section class="about-us text-center">
+      <div class="container">
+        <h2 class="margin-bottom-xs margin-top-sm">Who We Are &amp; Our Legacy</h2>
+        <span class="divider"></span>
+        <div class="col-md-offset-2 col-md-8 margin-top-xs">
+          <p class="lead">
+          Welcome to Lugnut’s Tires where we place the customer above all else. Our goal is to ensure that you have access to the best tires and automotive services. Established in 1968, Lugnut’s Tires has been serving customers for 50 years and our mission has not changed.
+          </p>
+        </div>
+      </div>
+    </section>
