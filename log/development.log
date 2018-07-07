@@ -28178,3 +28178,1025 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-07 13:35:50 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomePageController#index as HTML
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (532.6ms)
+  Rendered shared/_promo.html.erb (3.3ms)
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (74.9ms)
+  Rendered shared/_promotions.html.erb (0.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (3.3ms)
+Completed 200 OK in 955ms (Views: 915.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:35:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-07 13:44:11 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomePageController#index as HTML
+  [1m[36mCart Load (0.5ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (483.2ms)
+  Rendered shared/_promo.html.erb (4.3ms)
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (71.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (2.7ms)
+Completed 200 OK in 947ms (Views: 913.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:44:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-07 13:45:44 -0400
+Processing by HomePageController#index as HTML
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (4.5ms)
+  Rendered shared/_promo.html.erb (0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (6.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (3.1ms)
+Completed 200 OK in 136ms (Views: 131.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:45:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-07 13:47:36 -0400
+Processing by HomePageController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (4.6ms)
+  Rendered shared/_promo.html.erb (22.6ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (6.8ms)
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (4.1ms)
+Completed 200 OK in 175ms (Views: 168.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:47:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/contact/index" for 127.0.0.1 at 2018-07-07 13:47:40 -0400
+Processing by ContactController#index as HTML
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (4.0ms)
+  Rendered shared/_promo.html.erb (1.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (6.4ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (1.8ms)
+Completed 200 OK in 119ms (Views: 113.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/contact/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:47:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/contact/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/contact/index" for 127.0.0.1 at 2018-07-07 13:48:16 -0400
+Processing by ContactController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (2.1ms)
+  Rendered shared/_promo.html.erb (1.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (6.4ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (2.5ms)
+Completed 200 OK in 152ms (Views: 147.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contact/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:48:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/contact/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/contact/index" for 127.0.0.1 at 2018-07-07 13:48:30 -0400
+Processing by ContactController#index as HTML
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (2.4ms)
+  Rendered shared/_promo.html.erb (0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (5.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (5.1ms)
+Completed 200 OK in 144ms (Views: 139.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contact/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:48:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/contact/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/contact/index" for 127.0.0.1 at 2018-07-07 13:49:41 -0400
+Processing by ContactController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (2.4ms)
+  Rendered shared/_promo.html.erb (0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (7.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (3.6ms)
+Completed 200 OK in 159ms (Views: 150.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contact/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:49:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/contact/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/contact/index" for 127.0.0.1 at 2018-07-07 13:49:50 -0400
+Processing by ContactController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (2.7ms)
+  Rendered shared/_promo.html.erb (0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (5.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (3.5ms)
+Completed 200 OK in 140ms (Views: 134.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contact/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:49:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/contact/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-07-07 13:49:55 -0400
+Processing by HomePageController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (6.6ms)
+  Rendered shared/_promo.html.erb (0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (7.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (12.3ms)
+Completed 200 OK in 203ms (Views: 191.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:49:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-07-07 13:50:38 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mCart Load (0.7ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (91.9ms)
+  Rendered shared/_promo.html.erb (0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (6.7ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (3.0ms)
+Completed 200 OK in 309ms (Views: 257.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:50:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-07 13:50:48 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVnIAicnHXzuEhvV/c2PXGeS+zK51xGsvb/+J2RolY+YKEvPqwozI99EAy5SWXrvRQA4WvbM4Cea4Qo2xDVgOg==", "user"=>{"email"=>"test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.9ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SVnIAicnHXzuEhvV/c2PXGeS+zK51xGsvb/+J2RolY+YKEvPqwozI99EAy5SWXrvRQA4WvbM4Cea4Qo2xDVgOg==", "user"=>{"email"=>"test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mCACHE Cart Load (0.0ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.6ms)
+  Rendered shared/_promo.html.erb (0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (8.1ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (1.8ms)
+Completed 200 OK in 337ms (Views: 174.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:50:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-07 13:50:59 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YgUzTEHDv/ZEdJXTshKSr0gTaE6sofcIVPoH0tROAZJeL5Oa+sbzWFr7C+NZBvxvwl5tA8V+Byuek6KoALDMFw==", "user"=>{"email"=>"test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mCart Load (0.8ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 1.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YgUzTEHDv/ZEdJXTshKSr0gTaE6sofcIVPoH0tROAZJeL5Oa+sbzWFr7C+NZBvxvwl5tA8V+Byuek6KoALDMFw==", "user"=>{"email"=>"test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mCACHE Cart Load (0.0ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.8ms)
+  Rendered shared/_promo.html.erb (1.2ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (17.3ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (5.4ms)
+Completed 200 OK in 714ms (Views: 566.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:50:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-07-07 13:51:09 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lmgwcAD7am2R9misP1O7vnDbQBcwfqZl4ip1+7wjtDiqQpCmu/4mw4959pzUR9V++pZFWlmhVkYoQ9CBaN15vQ==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-07-07 17:51:09.855000"], ["sign_in_count", 2], ["updated_at", "2018-07-07 17:51:09.856743"], ["id", 4]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 182ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-07 13:51:09 -0400
+Processing by HomePageController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (5.9ms)
+  Rendered shared/_promo.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (7.4ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (3.3ms)
+Completed 200 OK in 157ms (Views: 147.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:51:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/contact/index" for 127.0.0.1 at 2018-07-07 13:51:37 -0400
+Processing by ContactController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (2.3ms)
+  Rendered shared/_promo.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_header.html.erb (6.8ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 37]]
+  Rendered shared/_footer.html.erb (2.9ms)
+Completed 200 OK in 135ms (Views: 126.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contact/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:51:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/contact/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-07-07 13:51:47 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wWxL7mKBPQHLhVKN3aHVy47EjV43wbnNVdhGSpAOgPFw8SEeoVeeM9SyMHguzSXwuiguEfnGMUe4sG097SREtw=="}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-07 13:51:47 -0400
+Processing by HomePageController#index as HTML
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "carts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-07 17:51:47.337377"], ["updated_at", "2018-07-07 17:51:47.337377"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  Rendering home_page/index.html.erb within layouts/application
+  Rendered home_page/index.html.erb within layouts/application (6.3ms)
+  Rendered shared/_promo.html.erb (0.8ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_header.html.erb (39.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_footer.html.erb (2.6ms)
+Completed 200 OK in 173ms (Views: 161.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:51:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/contact/index" for 127.0.0.1 at 2018-07-07 13:52:01 -0400
+Processing by ContactController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (4.0ms)
+  Rendered shared/_promo.html.erb (0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_header.html.erb (4.0ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_footer.html.erb (3.1ms)
+Completed 200 OK in 136ms (Views: 127.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contact/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:52:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/contact/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/products" for 127.0.0.1 at 2018-07-07 13:52:04 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY created_at desc[0m
+  Rendered products/index.html.erb within layouts/application (59.1ms)
+  Rendered shared/_promo.html.erb (0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_header.html.erb (7.3ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_footer.html.erb (2.9ms)
+Completed 200 OK in 198ms (Views: 175.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:52:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/products/15" for 127.0.0.1 at 2018-07-07 13:52:06 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (6.0ms)
+  Rendered shared/_promo.html.erb (0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_header.html.erb (5.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_footer.html.erb (3.4ms)
+Completed 200 OK in 178ms (Views: 150.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:52:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/promotion/index" for 127.0.0.1 at 2018-07-07 13:52:12 -0400
+Processing by PromotionController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  Rendering promotion/index.html.erb within layouts/application
+  Rendered promotion/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_promo.html.erb (0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_header.html.erb (5.7ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_footer.html.erb (3.3ms)
+Completed 200 OK in 143ms (Views: 133.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/promotion/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:52:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/promotion/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/services/index" for 127.0.0.1 at 2018-07-07 13:52:17 -0400
+Processing by ServicesController#index as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (3.7ms)
+  Rendered shared/_promo.html.erb (0.7ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_header.html.erb (6.2ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_footer.html.erb (2.8ms)
+Completed 200 OK in 115ms (Views: 106.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/services/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:52:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/services/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-07-07 13:52:22 -0400
+Processing by RegistrationsController#new as HTML
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.1ms)
+  Rendered shared/_promo.html.erb (0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_header.html.erb (6.1ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "line_items" WHERE "line_items"."cart_id" = ?[0m  [["cart_id", 38]]
+  Rendered shared/_footer.html.erb (3.1ms)
+Completed 200 OK in 149ms (Views: 146.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/images/logo-footer.png" for 127.0.0.1 at 2018-07-07 13:52:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/images/logo-footer.png"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'

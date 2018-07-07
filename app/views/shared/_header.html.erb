@@ -21,7 +21,7 @@
       <li><%= link_to "Promotions", :controller => "/promotion", :action => "index" %></li>
       <li><%= link_to "Services", :controller => "/services", :action => "index" %></li>
       <li><%= link_to "About", :controller => "/about", :action => "index" %></li>
-      <li><a href="#" class="cta-primary">Contact Us</a></li>
+      <li><%= link_to "Contact Us", { :controller => "/contact", :action => "index" }, :class => "cta-primary" %></li>
 
       <% if user_signed_in? %>
       <li>
